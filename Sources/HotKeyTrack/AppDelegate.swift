@@ -19,7 +19,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
         if let button = statusItem.button {
-            button.title = "⌨"
+            let config = NSImage.SymbolConfiguration(pointSize: 15, weight: .medium)
+            let image = NSImage(systemSymbolName: "scope", accessibilityDescription: "HotKeyTrack")?
+                .withSymbolConfiguration(config)
+            image?.isTemplate = true
+            button.image = image
+            button.imagePosition = .imageOnly
             button.toolTip = "HotKeyTrack"
             button.action = #selector(statusItemClicked(_:))
             button.target = self

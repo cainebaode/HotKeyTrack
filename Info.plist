@@ -10,10 +10,12 @@
     <string>HotKeyTrack</string>
     <key>CFBundleExecutable</key>
     <string>HotKeyTrack</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon.icns</string>
     <key>CFBundleVersion</key>
-    <string>0.1.0</string>
+    <string>2</string>
     <key>CFBundleShortVersionString</key>
-    <string>0.1.0</string>
+    <string>0.1.1</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleInfoDictionaryVersion</key>

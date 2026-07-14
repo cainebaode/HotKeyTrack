@@ -1,5 +1,9 @@
 # HotKeyTrack
 
+<p align="center">
+  <img src="Resources/AppIcon.png" width="128" alt="HotKeyTrack app icon">
+</p>
+
 一款原生 macOS 快捷键冲突诊断工具。它不仅能扫描已占用的快捷键，还能帮助你判断：**按下一个键后，究竟有哪些应用或系统界面作出了响应。**
 
 [![macOS 14+](https://img.shields.io/badge/macOS-14%2B-black?logo=apple)](https://github.com/cainebaode/HotKeyTrack/releases/latest)

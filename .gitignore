@@ -6,3 +6,6 @@ dist/
 DerivedData/
 *.xcuserstate
 xcuserdata/
+Resources/AppIcon.iconset/
+Resources/AppIconChroma.png
+Resources/AppIconSource.png

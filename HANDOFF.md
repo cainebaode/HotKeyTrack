@@ -31,7 +31,7 @@
 cd HotKeyTrack
 swift build -c release      # 仅编译
 bash build_app.sh           # 编译 + 组装 .app + 签名
-open .build/HotKeyTrack.app # 运行（菜单栏出现 ⌨ 图标）
+open .build/HotKeyTrack.app # 运行（菜单栏出现准星图标）
 ```
 
 首次运行需在「系统设置 → 隐私与安全性 → 辅助功能」授权本 App（CGEventTap 与 AX 扫描都依赖此权限）。

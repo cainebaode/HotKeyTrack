@@ -7,6 +7,7 @@ BUILD_DIR="$PROJ_DIR/.build"
 APP_BUNDLE="$BUILD_DIR/$APP_NAME.app"
 CONTENTS="$APP_BUNDLE/Contents"
 MACOS="$CONTENTS/MacOS"
+RESOURCES="$CONTENTS/Resources"
 
 echo "=== 编译 release ==="
 cd "$PROJ_DIR"
@@ -14,9 +15,10 @@ swift build -c release 2>&1
 
 echo "=== 组装 .app ==="
 rm -rf "$APP_BUNDLE"
-mkdir -p "$MACOS"
+mkdir -p "$MACOS" "$RESOURCES"
 cp "$BUILD_DIR/release/$APP_NAME" "$MACOS/$APP_NAME"
 cp "$PROJ_DIR/Info.plist" "$CONTENTS/Info.plist"
+cp "$PROJ_DIR/Resources/AppIcon.icns" "$RESOURCES/AppIcon.icns"
 
 echo "=== 签名（稳定自签名证书）==="
 SIGN_ID="HotKeyTrack Self-Signed"
